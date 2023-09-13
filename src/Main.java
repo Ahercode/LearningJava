@@ -1,9 +1,13 @@
+import GradeCalculator.GPA_Calculator;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
+
+
     public static void main(String[] args) {
 
-        System.out.printf("Hello and welcome!\n");
+//        System.out.printf("Hello and welcome!\n");
 
         System.out.println(Cat.getCount());
         Cat newCat = new Cat();
@@ -18,13 +22,12 @@ public class Main {
         newCat2.name="Aherto";
         System.out.println(newCat.name);
 
-        System.out.println("You have created: \n1. "+ newCat.name+" with age: " + newCat.age +
-                "\n2. "+ newCat1.name+" with age: "+ newCat1.age +
-                "\n3. " + newCat2.name+" with age: "+ newCat2.age);
+        GPA_Calculator.getGPA();
 
     }
 
     private static void guessName(String name, int age){
+
         System.out.println("My name is "+ name + " and I am "+ age +" years old");
     }
 }
